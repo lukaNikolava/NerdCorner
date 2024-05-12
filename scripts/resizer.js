@@ -3,8 +3,8 @@ function adjustHeight() {
     const header = document.querySelector('header');
     const headerHeight = header.clientHeight;
 
-    document.querySelector('.getStartedContainer').style.height = windowHeight - headerHeight + 'px';
 
+    document.querySelector('.getStartedContainer').style.height = windowHeight - headerHeight + 'px';
     document.querySelectorAll('.section').forEach(function(section) {
         section.style.height = windowHeight + 'px';
     });
