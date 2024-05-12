@@ -6,23 +6,36 @@
     list-style: none;
     text-decoration: none;
     font-family: "Kanit", sans-serif;
+    scroll-behavior: smooth;
+}
+*::selection{
+    background-color: #fff;
+    color: black;
 }
 header{
-    background-color: black;
     color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 40px;
+    padding: 0px 80px;
     height: 70px;
+    position: sticky;
+    top: 0;
+    transition: all .6s;
+    z-index: 99;
 }
 header *::selection{
     user-select: none;
+    background: none;
+    color: inherit;
 }
 header nav{
+    border-radius: 4px;
+    padding: 0px 40px;
     display: flex;
     align-items: center;
     height: 100%;
+    filter: drop-shadow(0px 0px 3px  black);
 }
 header h1{
     cursor: pointer;
@@ -30,18 +43,22 @@ header h1{
 .mainNavList{
     display: flex;
     height: 100%;
-    gap: 20px;
 }
 header ul li{
     display: flex;
+    padding: 0px 20px;
     align-items: center;
     position: relative;
     cursor: pointer;
     font-size: 20px;
+    transition: all .4s;
+}
+header ul li:hover{
+    background-color: #ffffff36;
 }
 .dropDownCategories{
     display: flex;
-    background-color: black;
+    background-color: #ffffff36;
     color: #fff;
     flex-direction: column;
     position: absolute;
@@ -55,9 +72,113 @@ header ul li{
 .dropDownCategories li{
     padding: 10px 20px;
     transition: all .4s;
-    border: 1px solid #00000087;
 }
 .dropDownCategories li:hover{
     background-color: #fff;
     color: black;
+}
+.backgroundImage{
+    height: 100%;
+    width: 100%;
+    background-image: url('../image/bgImages/image-6.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -50;
+    transition: all .6s;
+}
+.cardsContainer{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.getStartedContainer,
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+    height: 100%;
+    padding: 0px 80px;
+}
+.getStartedContentContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    filter: drop-shadow(0px 0px 3px  black);
+    gap: 30px;
+}
+.getStartedContentContainer :nth-child(1){
+    font-size: 50px;
+    font-weight: 800;
+}
+.getStartedContentContainer :nth-child(2){
+    font-size: 50px;
+    font-weight: 700;
+}
+.getStartedContentContainer button{
+    width: fit-content;
+    background: none;
+    border: 1px solid #ffffff4d;
+    color: #fff;
+    padding: 20px 40px;
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+    transition: all .6s;
+}
+.getStartedContentContainer button:hover{
+    color: black;
+}
+.getStartedContentContainer button::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    transition: all .6s;
+    z-index: -50;
+}
+.getStartedContentContainer button:hover::before{
+    width: 100%;
+}
+.ourOfferSection{
+    background-image: url('../image/bgImages/sc-2-background.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.ourOfferContainer{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 23px;
+    justify-content: center;
+    color: #ffffff;
+    filter: drop-shadow(0px 0px 3px  black);
+}
+.ourOfferContainer p{
+    cursor: pointer;
+}
+.ourOfferContainer h2{
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.ourOfferContainer :last-child{
+    font-size: 15px;
 }

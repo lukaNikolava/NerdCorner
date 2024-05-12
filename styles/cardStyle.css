@@ -1,5 +1,5 @@
-.mainCardContainer{
 
+.mainCardContainer{
     background-color: rgb(234, 234, 234);
     color: black;
     height: 400px;
@@ -8,11 +8,15 @@
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.350);
 
-    display: flex;
+    justify-content: center;
     flex-direction: column;
 
+    cursor: pointer;
     position: relative;
     transition: all .4s;
+}
+.mainCardContainer:hover{
+    transform: scale(1.03);
 }
 .mainCardContainer *::selection{
     background-color: #fff;
