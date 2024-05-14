@@ -1,7 +1,7 @@
 function adjustHeight() {
     const windowHeight = window.innerHeight;
     const header = document.querySelector('header');
-    const headerHeight = header.clientHeight;
+    const headerHeight = header.getBoundingClientRect().height;
     const bgImage = document.querySelector('.bg-image');
 
     bgImage.style.height = windowHeight + 'px';
