@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const background = document.querySelector('.backgroundImage');
+    const background = document.querySelector('.getStartedSection');
     const images = [
         {
             image:'./image/bgImages/image-1.jpg'
