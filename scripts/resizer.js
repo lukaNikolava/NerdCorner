@@ -6,7 +6,7 @@ function adjustHeight() {
 
     bgImage.style.height = windowHeight + 'px';
     document.querySelector('.getStartedContainer').style.height = windowHeight - headerHeight + 'px';
-    document.querySelectorAll('.section').forEach(function(section) {
+    document.querySelectorAll('.resizedSection').forEach(function(section) {
         section.style.height = windowHeight + 'px';
     });
 }
