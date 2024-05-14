@@ -40,9 +40,13 @@
     display: block;
     width: 100%;
     height: 3px;
-    background-color: #fff;
+    background-color: black;
     margin: 6px 0px;
     transition: all .4s;
+}
+.customColor::before,
+.customColor::after {
+    background-color: #fff; /* New color for pseudo-elements */
 }
 .burgerMenuButtonContainer.active:before{
     transform: rotate(45deg) translateY(6px) translateX(7px);
