@@ -66,6 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             const image = document.createElement('div');
             image.className = 'imgContainer';
+            // image.style.backgroundImage = 'url('+ element.image +')'
 
             const contentContainer = document.createElement('div')
             contentContainer.className = 'cardContentContainer';

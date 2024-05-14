@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/cardStyle.css">
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/cardStyle.css">
+    <link rel="stylesheet" href="./styles/burgerMenu.css">
+    <link rel="stylesheet" href="./styles/media.css">
     <title>NerdCorner</title>
 </head>
 <body>
+    <div class="preLoader"></div>
     <div>
         <header>
-            <h1>NerdCorner</h1>
-            <nav>
+            <h1><a href="./index.html">NerdCorner</a></h1>
+            <nav class="mainNavListContainer">
                 <ul class="mainNavList">
                     <li class="mainBtn">main</li>
                     <li class="categoriesBtn">categories
@@ -25,7 +28,25 @@
                     <li class="helpBtn">help</li>
                 </ul>
             </nav>
+            <div class="burgerMenuButtonContainer">
+                <div class="burgerMenuButton"></div>
+            </div>
         </header>
+        <div class="burgerMenuContainer">
+            <nav>
+                <ul>
+                    <li>main</li>
+                    <li>categories</li>
+                    <!-- <ul>
+                        <li>clothes</li>
+                        <li>shoes</li>
+                        <li>accesories</li>
+                    </ul> -->
+                    <li>about</li>
+                    <li>help</li>
+                </ul>
+            </nav>
+        </div>
         <main>
             <div class="backgroundImage"></div>
             <section class="getStartedSection">
@@ -34,12 +55,13 @@
                         <h2>Ready to turn your browsing into buying?</h2>
                         <p>Let's get</p>
                         <div class="buttonContainer">
-                            <button>started!</button>
+                            <button><a href="#shopping">started!</a></button>
                         </div>
                     </div>
                     <div></div>
                 </div>
             </section>
+        
             <section id="firstTargetSection" class="section ourOfferSection">
                 <div class="container">
                     <div class="ourOfferContainer">
@@ -52,23 +74,53 @@
                     <div></div>
                 </div>
             </section>
-            <section>
+            <section id="shopping" class="cardsSection">
+                <input class="searchBar" type="text" placeholder="რას ეძებთ?...">
+                <div class="bg-image"></div>
                 <div class="cardsContainer">
     
                 </div>
+                <button class="seeMoreBtn">See More</button>
             </section>
-    
-    
     
         </main>
     </div>
-
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="./image/logo/nerdCorner.png" alt="Magazine Logo">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Your Magazine Name. All rights reserved.</p>
+        </div>
+    </footer>
     
-    <script src="./scripts/headerScript.js"></script>
+
+    <script src="./scripts/preLoader.js"></script>
+    <script src="https://kit.fontawesome.com/1f479531c2.js" crossorigin="anonymous"></script>
+    <script src="./scripts/headerScript.js"></script> 
+    <script src="./scripts/burgerMenu.js"></script>
     <script src="./scripts/resizer.js"></script>
     <script src="./scripts/backgroundChanger.js"></script>
     <script src="./scripts/dropDownMenus.js"></script>
-    <!-- <script src="./scripts/cardsDataAndCreate.js"></script> -->
+    <script src="./scripts/cardsDataAndCreate.js"></script>
 
     <noscript>
         <p>Sorry, this website requires JavaScript to be enabled. Please enable JavaScript in your browser settings.</p>

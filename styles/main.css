@@ -12,6 +12,26 @@
     background-color: #fff;
     color: black;
 }
+input{
+    box-shadow: none;
+}
+input:focus{
+    outline-width: 0;
+}
+a{
+    color: inherit;
+}
+.preLoader{
+    position: fixed;
+    background-image: url('../image/gifs/preload.gif');
+    background-color: #fff;
+    background-position: center;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+}
 header{
     color: #fff;
     display: flex;
@@ -29,7 +49,7 @@ header *::selection{
     background: none;
     color: inherit;
 }
-header nav{
+.mainNavListContainer{
     border-radius: 4px;
     padding: 0px 40px;
     display: flex;
@@ -51,7 +71,7 @@ header ul li{
     position: relative;
     cursor: pointer;
     font-size: 20px;
-    transition: all .4s;
+    transition: all .1s;
 }
 header ul li:hover{
     background-color: #ffffff36;
@@ -67,7 +87,7 @@ header ul li:hover{
     transform:translateX(-50%);
     overflow: hidden;
     height: 0px;
-    transition: all ease-out .4s;
+    transition: all .8s;
 }
 .dropDownCategories li{
     padding: 10px 20px;
@@ -88,22 +108,14 @@ header ul li:hover{
     position: absolute;
     left: 0;
     top: 0;
-    z-index: -50;
     transition: all .6s;
-}
-.cardsContainer{
-    width: 90%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
 }
 section{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.getStartedContainer,
-.container{
+.getStartedContainer{
     display: grid;
     grid-template-columns: 1fr 2fr;
     width: 100%;
@@ -119,12 +131,12 @@ section{
     gap: 30px;
 }
 .getStartedContentContainer :nth-child(1){
-    font-size: 50px;
-    font-weight: 800;
+    font-size: 40px;
+    font-weight: 600;
 }
 .getStartedContentContainer :nth-child(2){
-    font-size: 50px;
-    font-weight: 700;
+    font-size: 40px;
+    font-weight: 600;
 }
 .getStartedContentContainer button{
     width: fit-content;
@@ -181,4 +193,109 @@ section{
 }
 .ourOfferContainer :last-child{
     font-size: 15px;
+}
+.bg-image{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+.container{
+    padding: 0px 80px;
+    height: inherit;
+}
+.cardsContainer{
+    padding: 90px 0px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+.cardsSection{
+    padding: 90px 0px;
+}
+.cardsSection .seeMoreBtn{
+    background: none;
+    padding: 15px 30px;
+    font-size: 26px;
+    font-weight: bold;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.62);
+    cursor: pointer;
+    position: relative;
+    transition: all .6s;
+
+    &::before{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        background-color: black;
+        top: 0;
+        left: 0;
+        transition: all .6s;
+        z-index: -1;
+    }
+
+    &:hover::before{
+        width: 100%;
+    }
+    &:hover{
+        color: #fff;
+    }
+}
+
+.searchBar{
+    position: relative;
+    padding: 5px 20px;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 300;
+    border: 1px solid rgba(0, 0, 0, 0.53);
+    width: 40%;
+}
+.footer {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo img {
+    max-width: 150px;
+}
+
+.footer-links ul,
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li,
+.footer-social ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.footer-social ul li a {
+    color: #fff;
+    font-size: 20px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
 }

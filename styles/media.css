@@ -1,0 +1,159 @@
+@media (min-width:769px) and (max-width:1025px) {
+    .getStartedContainer{
+        grid-template-columns: 1fr 1fr;
+    }
+    .getStartedContentContainer :nth-child(1){
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .getStartedContentContainer :nth-child(2){
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .getStartedContentContainer button{
+        padding: 16px 32px;
+        font-size: 40px;
+    }
+    .cardsContainer{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (min-width:426px) and (max-width:768px){
+    .getStartedContainer{
+        grid-template-columns: 1fr;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .getStartedContentContainer :nth-child(1){
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .getStartedContentContainer :nth-child(2){
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .getStartedContainer{
+        display: flex;
+        justify-content: center;
+    }
+    .buttonContainer{
+        display: flex;
+        justify-content: center;
+    }
+    .getStartedContentContainer button{
+        padding: 16px 32px;
+        font-size: 30px;
+    }
+    .getStartedContentContainer h2{
+        text-align: center;
+    }
+    .mainNavListContainer{
+        display: none;
+    }
+    .cardsContainer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container{
+        padding: 0px 20px;
+    }
+    .ourOfferContainer{
+        gap: 15px;
+        font-size: 16px;
+    }
+    .ourOfferContainer h2{
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .ourOfferContainer :last-child{
+        font-size: 15px;
+    }
+    .searchBar{
+        width: 50%;
+        font-size: 20px;
+    }
+    header{
+        padding: 0px 40px;
+    }
+    .burgerMenuButtonContainer{
+        display: block;
+    }
+    .preLoader{
+        background-size: 70%;
+    }
+}
+@media (min-width:0px) and (max-width:425px){
+    .getStartedContainer{
+        grid-template-columns: 1fr;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .getStartedContentContainer :nth-child(1){
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .getStartedContentContainer :nth-child(2){
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .buttonContainer{
+        display: flex;
+        justify-content: center;
+    }
+    .getStartedContentContainer button{
+        padding: 16px 32px;
+        font-size: 30px;
+    }
+    .getStartedContentContainer h2{
+        text-align: center;
+    }
+    .mainNavListContainer{
+        display: none;
+    }
+    .cardsContainer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cardsContainer{
+        grid-template-columns: 1fr;
+    }
+    .container{
+        padding: 0px 20px;
+    }
+    .ourOfferContainer{
+        gap: 15px;
+        font-size: 16px;
+    }
+    .ourOfferContainer h2{
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .ourOfferContainer :last-child{
+        font-size: 15px;
+    }
+    .ourOfferContainer{
+        color: #000000;
+        filter: drop-shadow(0px 0px 3px  rgb(255, 255, 255));
+    }
+    .searchBar{
+        width: 70%;
+        font-size: 16px;
+    }
+    header{
+        padding: 0px 20px;
+    }
+    .burgerMenuButtonContainer{
+        display: block;
+    }
+    .preLoader{
+        background-size: 140%;
+    }
+}
