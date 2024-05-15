@@ -33,7 +33,7 @@ a{
 .preLoader{
     position: fixed;
     background-image: url('../image/gifs/preload.gif');
-    background-color: #fff;
+    background-color: #2a2826;
     background-position: center;
     background-size: 30%;
     background-repeat: no-repeat;
