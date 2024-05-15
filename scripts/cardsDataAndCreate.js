@@ -3,57 +3,152 @@ document.addEventListener("DOMContentLoaded", function() {
         {
             thing: 'Hat',
             new: 'used',
-            price:'5$'
+            price:'5$',
+            image: './image/hat/hat1.jpg'
         },
         {
             thing: 'shoes',
             new: 'new',
-            price:'12$'
+            price:'12$',
+            image: './image/shoes/shoe1.jpg'
         },
         {
             thing: 'shirt',
             new: 'used',
-            price:'25$'
+            price:'25$',
+            image: './image/shirts/shirt1.jpg'
         },
         {
             thing: 'shirt',
             new: 'used',
-            price:'15$'
+            price:'15$',
+            image: './image/shirts/shirt2.webp'
         },
         {
             thing: 'skirt',
             new: 'new',
-            price:'55$'
+            price:'55$',
+            image: './image/skirts/skirt1.jpg'
         },
         {
             thing: 'hoodie',
             new: 'new',
-            price:'25$'
+            price:'25$',
+            image: './image/shirts/shirt1.jpg'
         },
         {
             thing: 'skirt',
             new: 'used',
-            price:'15$'
+            price:'15$',
+            image: './image/skirts/skirt2.jpg'
         },
         {
             thing: 'Hat',
             new: 'new',
-            price:'27$'
+            price:'27$',
+            image: './image/hat/hat2.webp'
         },
         {
             thing: 'hoodie',
             new: 'used',
-            price:'20$'
+            price:'20$',
+            image: './image/shirts/shirt1.jpg'
         },
         {
             thing: 'skirt',
             new: 'new',
-            price:'25$'
+            price:'25$',
+            image: './image/skirts/skirt3.jpg'
         },
         {
             thing: 'shirt',
             new: 'used',
-            price:'35$'
+            price:'35$',
+            image: './image/shirts/shirt3.webp'
+        },
+        {
+            thing: 'Hat',
+            new: 'new',
+            price:'27$',
+            image: './image/hat/hat3.webp'
+        },
+        {
+            thing: 'Hat',
+            new: 'new',
+            price:'27$',
+            image: './image/hat/hat4.webp'
+        },
+        {
+            thing: 'Hat',
+            new: 'new',
+            price:'27$',
+            image: './image/hat/hat5.webp'
+        },
+        {
+            thing: 'shoes',
+            new: 'new',
+            price:'12$',
+            image: './image/shoes/shoe2.webp'
+        },
+        {
+            thing: 'shoes',
+            new: 'new',
+            price:'12$',
+            image: './image/shoes/shoe3.jpg'
+        },
+        {
+            thing: 'shoes',
+            new: 'new',
+            price:'12$',
+            image: './image/shoes/shoe4.webp'
+        },
+        {
+            thing: 'shoes',
+            new: 'new',
+            price:'12$',
+            image: './image/shoes/shoe5.jpg'
+        },
+        {
+            thing: 'shoes',
+            new: 'new',
+            price:'12$',
+            image: './image/shoes/shoe6.jpg'
+        },
+        {
+            thing: 'shirt',
+            new: 'used',
+            price:'35$',
+            image: './image/shirts/shirt4.jpg'
+        },
+        {
+            thing: 'shirt',
+            new: 'used',
+            price:'35$',
+            image: './image/shirts/shirt5.jpg'
+        },
+        {
+            thing: 'shirt',
+            new: 'used',
+            price:'35$',
+            image: './image/shirts/shirt6.webp'
+        },
+        {
+            thing: 'skirt',
+            new: 'used',
+            price:'35$',
+            image: './image/skirts/skirt4.webp'
+        },
+        {
+            thing: 'shirt',
+            new: 'used',
+            price:'35$',
+            image: './image/skirts/skirt5.jpg'
+        },
+        {
+            thing: 'shirt',
+            new: 'used',
+            price:'35$',
+            image: './image/skirts/skirt6.jpg'
         }
     ];
 
@@ -66,7 +161,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             const image = document.createElement('div');
             image.className = 'imgContainer';
-            // image.style.backgroundImage = 'url('+ element.image +')'
+            image.style.backgroundImage = 'url('+ element.image +')'
 
             const contentContainer = document.createElement('div')
             contentContainer.className = 'cardContentContainer';
